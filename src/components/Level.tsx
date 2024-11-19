@@ -44,9 +44,9 @@ export function Level() {
     <group>
       {config.platforms.map((platform, index) => (
         <RigidBody key={index} type="fixed">
-          <mesh position={platform.position}>
-            <boxGeometry args={platform.scale} />
-            <meshStandardMaterial color="#444" />
+          <mesh position={platform.position} castShadow>
+            <boxGeometry args={platform.scale}  />
+            <meshStandardMaterial color="cornflowerblue" />
           </mesh>
         </RigidBody>
       ))}

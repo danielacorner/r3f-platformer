@@ -46,12 +46,12 @@ function App() {
             makeDefault 
             position={[20, 20, 20]} 
             fov={50}
-            rotation={[-Math.PI / 4, Math.PI / 4, 0]}
+            rotation={[-Math.PI / 4, Math.PI / 4, Math.PI / 6]}
           />
           
           <Sky />
           <ambientLight intensity={0.5} />
-          <directionalLight position={[10, 10, 10]} intensity={1} castShadow />
+          <directionalLight position={[10, 10, 10]} intensity={4} castShadow />
           
           <Physics gravity={[0, -20, 0]}>
             <Player />

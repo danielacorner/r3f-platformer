@@ -97,7 +97,7 @@ export function Player() {
     <>
       <RigidBody
         ref={playerRef}
-        position={[0, 2, 0]}
+        position={[0, 20, 0]}
         enabledRotations={[false, false, false]}
         mass={1}
         lockRotations
